@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-color: azure; */
+}
+
+header {
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+}
+
+img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    background-color: darkcyan;
+}
+
+main {
+    /* background-color:rgb(236, 215, 219); */
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    margin-top: 2em;
+    font-size: 0.9em;
+    text-align: center;
+    color: rgb(0, 36, 36)
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 2em 2em;
+}
+
+footer{
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    font-size: 0.7em;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h4{
+    margin: 0 2em;
+    text-align: left;
+    color: whitesmoke;
+}
+
+h5 {
+    font-size: 0.8em;
+}
+
+h6 {
+    font-size: 0.75em;
+}
+
+header img {
+    width: 7em;
+}
+
+nav a{
+    color: whitesmoke;
+}
+
+header>a, header>div {
+    text-align: center;
+}
+
+header a:hover {
+    font-weight: bold;
+}
+
+a:active {
+    color:rgb(235, 133, 17)
+}
+
+main ul {
+    margin: 0;
+}
+
+main>section {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer a {
+    color: rgb(243, 241, 238);
+}
+
+
+.main-container, .secondary-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.main-container>div {
+    width: 35%;
+}
+
+.secondary-container>div {
+    width: 15%;
+}
+
+nav>ul {
+    margin: 0;
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    justify-content: center;
+    height: 2em;
+    align-items: center;
+}
+
+section>div:hover {
+    box-shadow: -0.1em -0.1em 0.1em 0.1em rgb(24, 13, 0), 0.1em 0.1em 0.1em 0.1em rgb(24, 13, 0);;
+}
+
+main>section a {
+    text-decoration: none;
+}
+
+header a, aside a, nav a {
+    text-decoration: none;
+}
+
+.nav-bar>li {
+    padding: 0.3em 0.5em;
+}
+
+aside li:hover, footer li:hover, .nav-bar>li:hover {
+    font-weight: bold;
+}
