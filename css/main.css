@@ -2,89 +2,24 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* background-color: azure; */
 }
 
+/* HEADER*/
 header {
-    /* background-color: bisque; */
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 1fr;
     align-items: center;
 }
 
+/*Logo*/
 img {
     object-fit: cover;
     height: auto;
     width: 100%;
 }
 
-nav {
-    background-color: darkcyan;
-}
-
-main {
-    /* background-color:rgb(236, 215, 219); */
-    display: flex;
-}
-
-aside {
-    width: 20%;
-    margin-top: 2em;
-    font-size: 0.9em;
-    text-align: center;
-    color: rgb(0, 36, 36)
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-li {
-    margin: 2em 2em;
-}
-
-footer{
-    background-color: rgb(66, 66, 66);
-    display: flex;
-    font-size: 0.7em;
-    margin-top: 1em;
-    padding: 1em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    text-align: center;
-}
-
-h1 {
-    font-size: 1.6em;
-}
-
-h2 {
-    font-size: 1.2em;
-}
-
-h4{
-    margin: 0 2em;
-    text-align: left;
-    color: whitesmoke;
-}
-
-h5 {
-    font-size: 0.8em;
-}
-
-h6 {
-    font-size: 0.75em;
-}
-
 header img {
     width: 7em;
-}
-
-nav a{
-    color: whitesmoke;
 }
 
 header>a, header>div {
@@ -95,8 +30,38 @@ header a:hover {
     font-weight: bold;
 }
 
+/*Barra de navegación*/
+nav {
+    background-color: darkcyan;
+}
+
 a:active {
     color:rgb(235, 133, 17)
+}
+
+.nav-bar>li {
+    padding: 0.3em 0.5em;
+}
+
+nav>ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 2em;
+    align-items: center;
+}
+
+nav a{
+    color: whitesmoke;
+}
+
+/*Contenedores principal, secundario y enlaces alternativos*/
+main {
+    display: flex;
+}
+
+main>section a {
+    text-decoration: none;
 }
 
 main ul {
@@ -114,15 +79,6 @@ main>section {
     flex-wrap: wrap;
 }
 
-footer ul {
-    margin: 0;
-}
-
-footer a {
-    color: rgb(243, 241, 238);
-}
-
-
 .main-container, .secondary-container {
     display: flex;
     flex-wrap: wrap;
@@ -137,31 +93,86 @@ footer a {
     width: 15%;
 }
 
-nav>ul {
-    margin: 0;
-    /* background-color: lightgoldenrodyellow; */
-    display: flex;
-    justify-content: center;
-    height: 2em;
-    align-items: center;
+/*Enlaces alternativos*/
+aside {
+    width: 20%;
+    margin-top: 2em;
+    font-size: 0.9em;
+    text-align: center;
+    color: rgb(0, 36, 36)
+}
+/*Enlaces alternativos*/
+aside li:hover, footer li:hover, .nav-bar>li:hover {
+    font-weight: bold;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 2em 2em;
 }
 
 section>div:hover {
     box-shadow: -0.1em -0.1em 0.1em 0.1em rgb(24, 13, 0), 0.1em 0.1em 0.1em 0.1em rgb(24, 13, 0);;
 }
 
-main>section a {
-    text-decoration: none;
-}
-
 header a, aside a, nav a {
     text-decoration: none;
 }
 
-.nav-bar>li {
-    padding: 0.3em 0.5em;
+/*Encabezados*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    text-align: center;
 }
 
-aside li:hover, footer li:hover, .nav-bar>li:hover {
+h1 {
+    font-size: 1.6em;
+}
+/*Productos principales*/
+h2, .productos-principales {
+    font-size: 1.2em;
     font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+ /*Encabezados de las listas de enlaces del footer*/
+h4, .footer-header{
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0 2em;
+    text-align: left;
+    color: whitesmoke;
+}
+
+/*Productos secundarios*/
+h5, .productos-secundarios {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+h6 {
+    font-size: 0.75em;
+}
+
+/*Pie de página*/
+footer{
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    font-size: 0.7em;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer a {
+    color: rgb(243, 241, 238);
 }
